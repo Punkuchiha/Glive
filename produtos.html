@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Glive - Produtos</title>
+		<meta name="description" content="Reformando casas e restaurando sonhos!">
+
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="Glive"/>
+		<meta property="og:description" content="Reformando casas e restaurando sonhos!">"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link rel="stylesheet" href="css/contato.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/portfolio.css">
+		<link rel="stylesheet" href="css/produtos.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/responsivo.css">
+		<link rel="stylesheet" href="css/sobre.css">
+		<link rel="stylesheet" href="css/style-raw.css">
+		<script>document.documentElement.classList.add("js");</script>
+	</head>
+	<body>
+
+		<header class="header">
+			<div class="container">
+				<a href="index.html" class="grid-4">
+					<img src="img/bikcraft.svg" alt="Bikcraft">
+				</a>
+				<nav class="grid-12 header_menu">
+					<ul>
+						<li><a href="index.html">Pagina Principal</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section class="introducao-interna interna_produtos">
+			<div class="container">
+				<h1 data-anime="400" class="fadeInDown">Produtos</h1>
+				<p data-anime="800" class="fadeInDown">conheça todos os nossos produtos</p>
+			</div>
+		</section>
+
+		<section class="container produto_item fadeInDown" data-anime="1200">
+			<div class="grid-11">
+				<img src="img/produtos/paint1.jfif">
+				<h2>Pintura</h2>
+			</div>
+			<div class="grid-5 produto_icone"><img src="img/produtos/paint.jpg" width="500px" height="240px" alt="Icone Passeio"></div>
+			<div class="grid-8"><img src="img/produtos/paint2.jfif" alt="Bikcraft Passeio"></div>
+			<div class="grid-8 produto_info">
+				<p>Já pensou em ter o imóvel que sempre sonhou? Com as cores dos seus sonhos? A Glive torna isso possível para você! Através da nossa rede de contato, conseguimos te conectar com os melhores pintores da região para que a sua casa seja da cor dos seus sonhos!</p>
+				<ul>
+					<li>Conforto</li>
+					<li>Velocidade</li>
+					<li>Design</li>
+					<li>Versatilidade</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="container produto_item">
+			<div class="grid-11">
+				<img src="img/produtos/floot.jfif" width="640px" height="445px">
+				<h2>Instalação de Pisos</h2>
+			</div>
+			<div class="grid-5 produto_icone"><img src="img/produtos/flood2.jfif" width="500px" height="240px" alt="Icone Esporte"></div>
+			<div class="grid-8"><img src="img/produtos/flood.jfif" width="460px" height="280px"></div>
+			<div class="grid-8 produto_info">
+				<p>A instalação de Pisos para combinar com seu ambiente é de extrema responsabilidade. Verificar se seu contrapiso está na altura ideal, se a superfície está aspera e se possui fisuras. Contamos com profissionais de alto nível para garantir seu conforto!</p>
+				<ul>
+					<li>Conforto</li>
+					<li>Velocidade</li>
+					<li>Design</li>
+					<li>Versatilidade</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="container produto_item">
+			<div class="grid-11">
+				<img src="img/produtos/Air conditioning.jfif" width="640px" height="445px">
+				<h2>Retrô</h2>
+			</div>
+			<div class="grid-5 produto_icone"><img src="img/produtos/Air condicionat 1.jfif"width="500px" height="240px" ></div>
+			<div class="grid-8"><img src="img/produtos/Air condicionat 2.jfif" width="460px" height="280px">></div>
+			<div class="grid-8 produto_info">
+				<p>Nos empenhamos para o seu melhor conforto! Sem dúvidas nenhuma o ar condicionado é fundamental para que o calor possa fugir de você. Pensando nisso, fizemos parcerias com as melhores marcas de ar condicionado do país com assistência técnica personalizada!</p>
+				<ul>
+					<li>Conforto</li>
+					<li>Velocidade</li>
+					<li>Design</li>
+					<li>Versatilidade</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="orcamento">
+			<div class="container">
+				<h2 class="subtitulo">Orçamento</h2>
+				<form id="form_orcamento" method="POST" action="./enviar.php" class="form grid-8 formphp">
+					<label for="nome">Nome</label>
+					<input type="text" id="nome" name="nome" required>
+					<label for="email">E-mail</label>
+					<input type="email" id="email" name="email" required>
+					<label for="telefone">Telefone</label>
+					<input type="text" id="telefone" name="telefone">
+					<label for="cars">Escolha o serviço</label>
+						<select id="cars">
+							<option value="paint">Pintura interna</option>
+							<option value="flood">Instalação de piso</option>
+							<option value="air">Instalação de Ar condicionado</option>
+						</select>
+
+					<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+					<input type="text" class="nao-aparece" name="leaveblank">
+					<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+					<input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+					<label for="mensagem">Mensagem</label>
+					<textarea id="mensagem" name="mensagem" required></textarea>
+					<button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
+				</form>
+				
+				<div class="orcamento_dados grid-8">
+					<h3>Dados</h3>
+					<span>27 3333 9999</span>
+					<span>orcamento@glive.com</span>
+					<p>Valores:</p>
+					<ul>
+					<li>- Foco no cliente</li>
+    				<li>- Honestidade</li>
+    				<li>- Confiabilidade</li>
+   					<li>- Ética</li>
+    				<li>- Preço Justo</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">
+				<div class="container">
+
+					<div class="grid-4 footer_contato">
+						<h3>Contato</h3>
+						<ul>
+							<li>- 27 3333 9999</li>
+							<li>- contato@glive.com</li>
+							<li>- Vitória - ES</li>
+						</ul>
+					</div>
+
+					<div class="grid-4 footer_redes">
+						<h3>Contato</h3>
+						<ul>
+							<li><a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt="Facebook Glive"></a></li>
+							<li><a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt="Instagram Glive"></a></li>
+							<li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" alt="Twitter Glive"></a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="copy">
+				<div class="container">
+					<p class="grid-16">Glive 2020 - Alguns direitos reservados.</p>
+				</div>
+			</div>
+		</footer>
+
+	
+	<script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
+
+	</body>
+</html>
