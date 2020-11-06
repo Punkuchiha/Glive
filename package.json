@@ -1,10 +1,25 @@
 {
-"scripts": {
-  "dev": "nuxt",
-  "build": "nuxt build",
-  "start": "nuxt start",
-  "generate": "nuxt generate",
-  "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-  "heroku-postbuild": "npm run build"
-}
+  "name": "glive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+      "dev": "nuxt",
+      "build": "nuxt build",
+      "start": "nuxt start",
+      "generate": "nuxt generate",
+      "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+      "heroku-postbuild": "npm run build"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Punkuchiha/Glive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Punkuchiha/Glive/issues"
+  },
+  "homepage": "https://github.com/Punkuchiha/Glive#readme",
+  "description": ""
 }
